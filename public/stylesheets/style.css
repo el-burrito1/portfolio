@@ -1,0 +1,83 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.contentTop{
+	margin-top:25px;
+}
+
+/*.imgContainer{
+	margin: 0 auto;
+	display: block;
+}*/
+
+.photo{
+	height:200px;
+	width:300px;
+	display: block;
+	margin: 0 auto;
+	margin-top:75px;
+}
+
+.description{
+	font-size:20pt;
+	display: block;
+	text-align: center;
+}
+
+.iconContainer{
+	display: inline;
+}
+
+.icon{
+	padding-left: 10px;
+	padding-right:10px;
+}
+
+.contact{
+	text-align: center;
+}
+
+.footer{
+	height:110px;
+	margin-top: 100px;
+	background-color: #f0f0f0;
+	text-align: center;
+}
+
+.title{
+	text-align: center;
+	font-size: 18pt;
+	display: block;
+}
+
+.talasurf{
+	display:inline;
+	float:left;
+}
+
+.finder{
+	display: inline;
+	float:right;
+}
+
+#talaphoto{
+	height:55	0px;
+	width: 400px;
+}
+
+.textDescrip{
+	text-align: center;
+}
+
+.blogContent{
+	font-size: 12pt;
+}
+
+
+

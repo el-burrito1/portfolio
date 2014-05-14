@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    nav(class='navbar navbar-default navbar-fixed-top' id='test' role='navigation')
+        a(class='navbar-brand' href='/') home
+        ul(class='nav navbar-nav')
+            li
+                a(class='navLinks' href='/portfolio') portfolio
+            li
+                a(class='navLinks' href='/blog') blog
+    div(class='col-md-5 textDescrip')
+        h2 Talasurf
+        p Talasurf is a website used to share interesting content related to surfing, health, and wellness. The site was built using Node.js, Express, and MongoDB.  
+    div(class='col-md-2')
+    div(class='col-md-5 textDescrip') 
+        h2 reFind
+        p reFind is a mobile app that allows users who are enjoying a night on the town to discover areas with the most singles or couples. The app was compiled using Phonegap, and the backend API was built with Node.js.
+    div(class='col-md-6')
+        a(href='http://www.talasurf.com' target='_blank')
+            img(src='images/surfer.jpg' style='height:552px;width:400px; margin-left:98px; box-shadow: 5px 5px 30px 0px #888888; margin-top:20px;')
+    div(class='col-md-6')
+        img(src='images/iphone.png' style='height:600px;width:336px;margin-left:255px;')

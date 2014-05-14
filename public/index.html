@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Portfolio Website</title>
+	</head>
+
+	<body>
+		<h1>Portfolio Site</h1>
+
+		<p>Welcome to my portfolio site</p>
+
+		<script src='lib/jquery-1.11.1.min.js'></script>
+		<script src='lib/underscore-min.js'></script>
+		<script src='lib/backbone-min.js'></script>
+		<script src='lib/bootstrap.min.js'></script>
+
+		<script>
+			var Tweet = Backbone.Model.extend({
+				defaults : function(){
+					return {
+						author  : '',
+						message : ''
+					}
+				}
+			});
+
+			var tweetList = Backbone.Collection.extend({
+				model: Tweet
+			});
+
+			var tweet1 = new Tweet({author:'me' , message:'sup?'});
+			var tweet2 = new Tweet({author:'you' , message:'how are you?'});
+			var tweet3 = new Tweet({author:'us' , message:'hey everybody'});
+			var tweet = new Tweet({message:'hey!'})
+
+			var tweets = new tweetList([tweet,tweet1,tweet2,tweet3])
+			console.log(tweets.toJSON());
+
+		</script>
+
+
+	</body>
+</html>

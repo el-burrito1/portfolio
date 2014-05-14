@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    nav(class='navbar navbar-default navbar-fixed-top' id='test' role='navigation')
+        a(class='navbar-brand' href='/') home
+        ul(class='nav navbar-nav')
+            li
+                a(class='navLinks' href='/portfolio') portfolio
+            li
+                a(class='navLinks' href='/blog') blog
+    div(class='imgContainer')
+        img(src='images/SpencerSpiegel.jpg' class='contentTop photo')
+    div(class='contentTop description') Hello! My name is Spencer Spiegel. I'm a <strong> web and mobile developer </strong> by trade. 
+        p
+        | If I'm not coding, I'm probably surfing, playing basketball, or eating delicious Mexican food.
+        p 
+        br
+        | Please feel free to connect with me on:
+        br
+        br
+        div(class='iconContainer')
+            a(href='https://www.linkedin.com/pub/spencer-spiegel/48/463/413' target='_blank')
+                i(class="fa fa-linkedin-square fa-2x icon" id='linkedIn')
+        div(class='iconContainer') or
+            a(href='https://twitter.com/spencerrs34' target='_blank')
+                i(class="fa fa-twitter-square fa-2x icon" id='twitter')
+        div(class='contact')
+            p or contact me by <a href='mailto:spencer.spiegel@gmail.com'>email!</a>
