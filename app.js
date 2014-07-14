@@ -36,13 +36,6 @@ app.get('/' , function(req,res){
 	res.render('index');
 })
 
-app.get('/portfolio' , function(req,res){
-	res.render('portfolio');
-})
-
-app.get('/blog' , function(req,res){
-	res.render('blog');
-})
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
